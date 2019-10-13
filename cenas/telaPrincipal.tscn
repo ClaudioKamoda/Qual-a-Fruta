@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://imagens/icon.png" type="Texture" id=1]
+[ext_resource path="res://cenas/Background.tscn" type="PackedScene" id=2]
+
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Botões" type="CanvasLayer" parent="."]
+editor/display_folded = true
+
+[node name="Fruta 1" type="Button" parent="Botões"]
+margin_left = 721.0
+margin_top = 124.0
+margin_right = 896.0
+margin_bottom = 269.0
+
+[node name="Sprite Fruta 1" type="Sprite" parent="Botões/Fruta 1"]
+position = Vector2( 34.0094, 16.3245 )
+scale = Vector2( 1.70144, 1.70144 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Fruta 2" type="Button" parent="Botões"]
+margin_left = 721.0
+margin_top = 316.0
+margin_right = 896.0
+margin_bottom = 461.0
+
+[node name="Sprite Fruta 2" type="Sprite" parent="Botões/Fruta 2"]
+position = Vector2( 34.0094, 16.3245 )
+scale = Vector2( 1.70144, 1.70144 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Background" parent="." instance=ExtResource( 2 )]
+layer = 0
