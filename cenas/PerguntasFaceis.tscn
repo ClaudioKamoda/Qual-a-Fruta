@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/Pergunta.gd" type="Script" id=1]
+
+[node name="PerguntasFaceis" type="Node"]
+
+[node name="Pergunta" type="Node" parent="."]
+script = ExtResource( 1 )
+gif = "Banana"
+fruta1 = "Banana"
+fruta2 = "Laranja"
+resposta = "Banana"
+
+[node name="Pergunta2" type="Node" parent="."]
+script = ExtResource( 1 )
+gif = "Laranja"
+fruta1 = "Limão"
+fruta2 = "Laranja"
+resposta = "Laranja"
+
+[node name="Pergunta3" type="Node" parent="."]
+script = ExtResource( 1 )
+gif = "Abacaxi"
+fruta1 = "Abacaxi"
+fruta2 = "Caju"
+resposta = "Abacaxi"
+
+[node name="Pergunta4" type="Node" parent="."]
+script = ExtResource( 1 )
+gif = "Limão"
+fruta1 = "Limão"
+fruta2 = "Maça"
+resposta = "Limão"
+
+[node name="Pergunta5" type="Node" parent="."]
+script = ExtResource( 1 )
+gif = "Maça"
+fruta1 = "Pêra"
+fruta2 = "Maça"
+resposta = "Maça"
