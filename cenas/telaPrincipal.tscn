@@ -12,32 +12,33 @@ script = ExtResource( 1 )
 fruta1Path = NodePath("Botões/Fruta 1/SpriteFruta1")
 fruta2Path = NodePath("Botões/Fruta 2/SpriteFruta2")
 perguntasFaceisPath = NodePath("PerguntasFaceis")
+timerPath = NodePath("timer")
 
 [node name="Botões" type="CanvasLayer" parent="."]
 
 [node name="Fruta 1" type="Button" parent="Botões"]
-margin_left = 721.0
-margin_top = 124.0
-margin_right = 900.0
-margin_bottom = 268.0
+margin_left = 552.813
+margin_top = 235.067
+margin_right = 752.813
+margin_bottom = 385.067
 size_flags_horizontal = 0
 size_flags_vertical = 0
 size_flags_stretch_ratio = 0.0
 
 [node name="SpriteFruta1" type="Sprite" parent="Botões/Fruta 1"]
-position = Vector2( 34.0094, 16.3245 )
+position = Vector2( 43.5294, 22.6712 )
 scale = Vector2( 1.70144, 1.70144 )
 texture = ExtResource( 2 )
 centered = false
 
 [node name="Fruta 2" type="Button" parent="Botões"]
-margin_left = 721.0
-margin_top = 316.0
-margin_right = 896.0
-margin_bottom = 461.0
+margin_left = 789.227
+margin_top = 238.253
+margin_right = 989.227
+margin_bottom = 388.253
 
 [node name="SpriteFruta2" type="Sprite" parent="Botões/Fruta 2"]
-position = Vector2( 34.0094, 16.3245 )
+position = Vector2( 41.9427, 22.6712 )
 scale = Vector2( 1.70144, 1.70144 )
 texture = ExtResource( 2 )
 centered = false
@@ -45,6 +46,11 @@ centered = false
 [node name="Background" parent="." instance=ExtResource( 3 )]
 layer = 0
 
+[node name="timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
 [node name="PerguntasFaceis" parent="." instance=ExtResource( 4 )]
 [connection signal="button_up" from="Botões/Fruta 1" to="." method="_on_Fruta_1_button_up"]
 [connection signal="button_up" from="Botões/Fruta 2" to="." method="_on_Fruta_2_button_up"]
+[connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]

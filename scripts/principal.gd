@@ -4,13 +4,15 @@ extends Control
 export (NodePath) var fruta1Path 
 export (NodePath) var fruta2Path
 export (NodePath) var perguntasFaceisPath
+export (NodePath) var timerPath
 
 onready var fruta1 = get_node(fruta1Path)
 onready var fruta2 = get_node(fruta2Path)
 onready var perguntasFaceis = get_node(perguntasFaceisPath)
+onready var timer = get_node(timerPath)
 
 var score = 0
-var acabou = false
+#var acabou = false
 var fruta1Text
 var fruta2Text
 var resposta
@@ -31,7 +33,8 @@ func set_Pergunta():
 		fruta2.set_texture(load('res://imagens/'+fruta2Text+'.png'))
 		resposta = perguntaAtual.resposta
 	else:
-		acabou = true
+		#acabou = true
+		print("Acabou")
 	
 	if perguntaAtual != null:
 		perguntasFaceis.remove_child(perguntaAtual)
@@ -41,14 +44,19 @@ func _on_Fruta_1_button_up():
 	if fruta1Text == resposta:
 		print("Você acertou, "+fruta1Text)
 		score += 1
+		timer.start()
 	else:
-		print("Você errou"+fruta1Text)
+		print("Você errou, "+fruta1Text)
 	
 
 func _on_Fruta_2_button_up():
 	if fruta2Text == resposta:
-		print("Você acertou"+fruta2Text)
+		print("Você acertou, "+fruta2Text)
 		score += 1
+		timer.start()
 	else:
-		print("Você errou"+fruta2Text)
+		print("Você errou, "+fruta2Text)
 	
+
+func _on_timer_timeout():
+	set_Pergunta()
