@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://scripts/principal.gd" type="Script" id=1]
+[ext_resource path="res://scripts/principalFaceis.gd" type="Script" id=1]
 [ext_resource path="res://imagens/icon.png" type="Texture" id=2]
 [ext_resource path="res://cenas/Background.tscn" type="PackedScene" id=3]
 [ext_resource path="res://cenas/PerguntasFaceis.tscn" type="PackedScene" id=4]
@@ -47,7 +47,7 @@ centered = false
 layer = 0
 
 [node name="timer" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 2.0
 one_shot = true
 
 [node name="PerguntasFaceis" parent="." instance=ExtResource( 4 )]
