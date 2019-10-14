@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/maça.png-269191d09262babbe8cbbaf79cf076f2.stex"
+path="res://.import/goiaba.png-6b9d55922cbfbb09a87642e9f9da5008.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagens/maça.png"
-dest_files=[ "res://.import/maça.png-269191d09262babbe8cbbaf79cf076f2.stex" ]
+source_file="res://imagens/goiaba.png"
+dest_files=[ "res://.import/goiaba.png-6b9d55922cbfbb09a87642e9f9da5008.stex" ]
 
 [params]
 

@@ -26,8 +26,6 @@ size_flags_vertical = 0
 size_flags_stretch_ratio = 0.0
 
 [node name="SpriteFruta1" type="Sprite" parent="Botões/Fruta 1"]
-position = Vector2( 43.5294, 22.6712 )
-scale = Vector2( 1.70144, 1.70144 )
 texture = ExtResource( 2 )
 centered = false
 
@@ -38,8 +36,6 @@ margin_right = 989.227
 margin_bottom = 388.253
 
 [node name="SpriteFruta2" type="Sprite" parent="Botões/Fruta 2"]
-position = Vector2( 41.9427, 22.6712 )
-scale = Vector2( 1.70144, 1.70144 )
 texture = ExtResource( 2 )
 centered = false
 
