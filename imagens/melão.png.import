@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/melão.png-636cef44d476b7e38f50608b1ff31920.stex"
+path="res://.import/Melão.png-c3b2d01e210f2e86c7341851e788d8bf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagens/melão.png"
-dest_files=[ "res://.import/melão.png-636cef44d476b7e38f50608b1ff31920.stex" ]
+source_file="res://imagens/Melão.png"
+dest_files=[ "res://.import/Melão.png-c3b2d01e210f2e86c7341851e788d8bf.stex" ]
 
 [params]
 

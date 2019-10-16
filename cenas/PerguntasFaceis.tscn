@@ -6,35 +6,35 @@
 
 [node name="Pergunta" type="Node" parent="."]
 script = ExtResource( 1 )
-gif = "Banana"
+video = "Banana"
 fruta1 = "Banana"
 fruta2 = "Laranja"
 resposta = "Banana"
 
 [node name="Pergunta2" type="Node" parent="."]
 script = ExtResource( 1 )
-gif = "Laranja"
+video = "Laranja"
 fruta1 = "Limão"
 fruta2 = "Laranja"
 resposta = "Laranja"
 
 [node name="Pergunta3" type="Node" parent="."]
 script = ExtResource( 1 )
-gif = "Melancia"
+video = "Melancia"
 fruta1 = "Melancia"
 fruta2 = "Melão"
 resposta = "Melancia"
 
 [node name="Pergunta4" type="Node" parent="."]
 script = ExtResource( 1 )
-gif = "Côco"
+video = "Coco"
 fruta1 = "Côco"
 fruta2 = "Maça"
 resposta = "Côco"
 
 [node name="Pergunta5" type="Node" parent="."]
 script = ExtResource( 1 )
-gif = "Uva"
+video = "Uva"
 fruta1 = "Pêra"
 fruta2 = "Uva"
 resposta = "Uva"
