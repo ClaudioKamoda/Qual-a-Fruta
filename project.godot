@@ -16,6 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="JogoEducativo"
+run/main_scene="res://cenas/TitleScreen.tscn"
 config/icon="res://imagens/icon.png"
 
 [rendering]

@@ -45,6 +45,6 @@ script = ExtResource( 1 )
 gif = "Cereja"
 fruta1 = "Uva"
 fruta2 = "Cereja"
-fruta3 = "Acerola"
+fruta3 = "Laranja"
 fruta4 = "Jabuticaba"
 resposta = "Cereja"
