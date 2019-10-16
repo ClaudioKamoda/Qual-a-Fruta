@@ -66,6 +66,7 @@ texture = ExtResource( 2 )
 layer = 0
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
 
 [node name="PerguntasMedias" parent="." instance=ExtResource( 4 )]
 [connection signal="button_up" from="Botões/Fruta1" to="." method="_on_Fruta1_button_up"]
