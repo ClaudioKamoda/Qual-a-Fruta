@@ -58,6 +58,7 @@ func _on_Fruta1_button_up():
 		timer.start()
 	else:
 		print("Você errou, "+fruta1Text)
+		
 
 
 func _on_Fruta2_button_up():
