@@ -19,48 +19,44 @@ timerPath = NodePath("Timer")
 [node name="Botões" type="CanvasLayer" parent="."]
 
 [node name="Fruta1" type="Button" parent="Botões"]
-margin_left = 529.184
-margin_top = 145.921
-margin_right = 713.184
-margin_bottom = 283.921
+margin_left = 530.0
+margin_top = 145.0
+margin_right = 730.0
+margin_bottom = 295.0
 
 [node name="SpriteFruta1" type="Sprite" parent="Botões/Fruta1"]
-position = Vector2( 91.4205, 70.3234 )
-scale = Vector2( 1.71422, 1.71422 )
 texture = ExtResource( 2 )
+centered = false
 
 [node name="Fruta2" type="Button" parent="Botões"]
-margin_left = 761.251
-margin_top = 138.889
-margin_right = 945.251
-margin_bottom = 276.889
+margin_left = 780.0
+margin_top = 145.0
+margin_right = 980.0
+margin_bottom = 295.0
 
 [node name="SpriteFruta2" type="Sprite" parent="Botões/Fruta2"]
-position = Vector2( 91.4205, 70.3234 )
-scale = Vector2( 1.71422, 1.71422 )
 texture = ExtResource( 2 )
+centered = false
 
 [node name="Fruta3" type="Button" parent="Botões"]
-margin_left = 525.667
-margin_top = 335.794
-margin_right = 709.667
-margin_bottom = 473.794
+margin_left = 530.0
+margin_top = 335.0
+margin_right = 730.0
+margin_bottom = 485.0
 
 [node name="SpriteFruta3" type="Sprite" parent="Botões/Fruta3"]
-position = Vector2( 91.4205, 70.3234 )
-scale = Vector2( 1.71422, 1.71422 )
 texture = ExtResource( 2 )
+centered = false
 
 [node name="Fruta4" type="Button" parent="Botões"]
-margin_left = 763.009
-margin_top = 341.069
-margin_right = 947.009
-margin_bottom = 479.069
+margin_left = 780.0
+margin_top = 335.0
+margin_right = 980.0
+margin_bottom = 485.0
 
 [node name="SpriteFruta4" type="Sprite" parent="Botões/Fruta4"]
-position = Vector2( 91.4205, 70.3234 )
-scale = Vector2( 1.71422, 1.71422 )
 texture = ExtResource( 2 )
+centered = false
 
 [node name="Background" parent="." instance=ExtResource( 3 )]
 layer = 0

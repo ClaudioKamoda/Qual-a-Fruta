@@ -6,15 +6,55 @@
 
 [node name="PerguntaDificil" type="Node" parent="."]
 script = ExtResource( 1 )
+gif = "Maracujá"
+fruta1 = "Maça"
+fruta2 = "Laranja"
+fruta3 = "Maracujá"
+fruta4 = "Melão"
+fruta5 = "Limão"
+fruta6 = "Goiaba"
+resposta = "Maracujá"
 
 [node name="PerguntaDificil2" type="Node" parent="."]
 script = ExtResource( 1 )
+gif = "Manga"
+fruta1 = "Morango"
+fruta2 = "Banana"
+fruta3 = "Tomate"
+fruta4 = "Manga"
+fruta5 = "Côco"
+fruta6 = "Melancia"
+resposta = "Manga"
 
 [node name="PerguntaDificil3" type="Node" parent="."]
 script = ExtResource( 1 )
+gif = "Melão"
+fruta1 = "Melancia"
+fruta2 = "Laranja"
+fruta3 = "Maça"
+fruta4 = "Melão"
+fruta5 = "Limão"
+fruta6 = "Côco"
+resposta = "Melão"
 
 [node name="PerguntaDificil4" type="Node" parent="."]
 script = ExtResource( 1 )
+gif = "Caju"
+fruta1 = "Caju"
+fruta2 = "Maracujá"
+fruta3 = "Pêssego"
+fruta4 = "Banana"
+fruta5 = "Abacaxi"
+fruta6 = "Cereja"
+resposta = "Caju"
 
 [node name="PerguntaDificil5" type="Node" parent="."]
 script = ExtResource( 1 )
+gif = "Goiaba"
+fruta1 = "Caju"
+fruta2 = "Pêssego"
+fruta3 = "Maça"
+fruta4 = "Kiwi"
+fruta5 = "Cereja"
+fruta6 = "Goiaba"
+resposta = "Goiaba"

@@ -12,10 +12,11 @@ onready var perguntasFaceis = get_node(perguntasFaceisPath)
 onready var timer = get_node(timerPath)
 
 var score = 0
-#var acabou = false
+var acabou = false
 var fruta1Text
 var fruta2Text
 var resposta
+var penalty = 0
 
 func _ready():
 	randomize()
@@ -33,7 +34,7 @@ func set_Pergunta():
 		fruta2.set_texture(load('res://imagens/'+fruta2Text+'.png'))
 		resposta = perguntaAtual.resposta
 	else:
-		#acabou = true
+		acabou = true
 		print("Acabou")
 	
 	if perguntaAtual != null:
@@ -42,20 +43,24 @@ func set_Pergunta():
 
 func _on_Fruta_1_button_up():
 	if fruta1Text == resposta:
-		print("Você acertou, "+fruta1Text)
-		score += 1
+		score = score + 100 - penalty
+		penalty = 0
+		print("Você acertou, "+fruta1Text+" "+str(score))
 		timer.start()
 	else:
-		print("Você errou, "+fruta1Text)
+		penalty += 10
+		print("Você errou, "+fruta1Text+" "+str(score))
 	
 
 func _on_Fruta_2_button_up():
 	if fruta2Text == resposta:
-		print("Você acertou, "+fruta2Text)
-		score += 1
+		score = score + 100 - penalty
+		penalty = 0
+		print("Você acertou, "+fruta2Text+" "+str(score))
 		timer.start()
 	else:
-		print("Você errou, "+fruta2Text)
+		penalty += 10
+		print("Você errou, "+fruta2Text+" "+str(score))
 	
 
 func _on_timer_timeout():
