@@ -6,7 +6,7 @@
 
 [node name="PerguntaDificil" type="Node" parent="."]
 script = ExtResource( 1 )
-gif = "Maracujá"
+video = "Maracuja"
 fruta1 = "Maça"
 fruta2 = "Laranja"
 fruta3 = "Maracujá"
@@ -17,7 +17,7 @@ resposta = "Maracujá"
 
 [node name="PerguntaDificil2" type="Node" parent="."]
 script = ExtResource( 1 )
-gif = "Manga"
+video = "Manga"
 fruta1 = "Morango"
 fruta2 = "Banana"
 fruta3 = "Tomate"
@@ -28,7 +28,7 @@ resposta = "Manga"
 
 [node name="PerguntaDificil3" type="Node" parent="."]
 script = ExtResource( 1 )
-gif = "Melão"
+video = "Melao"
 fruta1 = "Melancia"
 fruta2 = "Laranja"
 fruta3 = "Maça"
@@ -39,7 +39,7 @@ resposta = "Melão"
 
 [node name="PerguntaDificil4" type="Node" parent="."]
 script = ExtResource( 1 )
-gif = "Caju"
+video = "Caju"
 fruta1 = "Caju"
 fruta2 = "Maracujá"
 fruta3 = "Pêssego"
@@ -50,7 +50,7 @@ resposta = "Caju"
 
 [node name="PerguntaDificil5" type="Node" parent="."]
 script = ExtResource( 1 )
-gif = "Goiaba"
+video = "Goiaba"
 fruta1 = "Caju"
 fruta2 = "Pêssego"
 fruta3 = "Maça"

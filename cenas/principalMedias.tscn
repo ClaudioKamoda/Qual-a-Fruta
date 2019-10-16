@@ -1,14 +1,16 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/principalMedias.gd" type="Script" id=1]
 [ext_resource path="res://imagens/icon.png" type="Texture" id=2]
 [ext_resource path="res://cenas/Background.tscn" type="PackedScene" id=3]
 [ext_resource path="res://cenas/PerguntasMedias.tscn" type="PackedScene" id=4]
+[ext_resource path="res://videos/Abacaxi.ogv" type="VideoStream" id=5]
 
 [node name="Control" type="Control"]
 margin_right = 40.0
 margin_bottom = 40.0
 script = ExtResource( 1 )
+videoFrutaPath = NodePath("videoFruta")
 fruta1Path = NodePath("Botões/Fruta1/SpriteFruta1")
 fruta2Path = NodePath("Botões/Fruta2/SpriteFruta2")
 fruta3Path = NodePath("Botões/Fruta3/SpriteFruta3")
@@ -59,13 +61,23 @@ texture = ExtResource( 2 )
 centered = false
 
 [node name="Background" parent="." instance=ExtResource( 3 )]
-layer = 0
+layer = -1
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
 
 [node name="PerguntasMedias" parent="." instance=ExtResource( 4 )]
+
+[node name="videoFruta" type="VideoPlayer" parent="."]
+margin_left = 138.0
+margin_top = 582.0
+margin_right = 619.0
+margin_bottom = 852.0
+rect_rotation = 270.0
+stream = ExtResource( 5 )
 [connection signal="button_up" from="Botões/Fruta1" to="." method="_on_Fruta1_button_up"]
 [connection signal="button_up" from="Botões/Fruta2" to="." method="_on_Fruta2_button_up"]
 [connection signal="button_up" from="Botões/Fruta3" to="." method="_on_Fruta3_button_up"]
 [connection signal="button_up" from="Botões/Fruta4" to="." method="_on_Fruta4_button_up"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="finished" from="videoFruta" to="." method="_on_videoFruta_finished"]

@@ -1,6 +1,6 @@
 extends Control
 
-#export (NodePath) var gifFrutaPath
+export (NodePath) var videoFrutaPath
 export (NodePath) var fruta1Path 
 export (NodePath) var fruta2Path
 export (NodePath) var fruta3Path 
@@ -10,6 +10,7 @@ export (NodePath) var fruta6Path
 export (NodePath) var perguntasDificeisPath
 export (NodePath) var timerPath
 
+onready var video = get_node(videoFrutaPath)
 onready var fruta1 = get_node(fruta1Path)
 onready var fruta2 = get_node(fruta2Path)
 onready var fruta3 = get_node(fruta3Path)
@@ -27,6 +28,7 @@ var fruta3Text
 var fruta4Text
 var fruta5Text
 var fruta6Text
+var videoText
 var resposta
 
 func _ready():
@@ -45,12 +47,15 @@ func set_Pergunta():
 		fruta4Text = perguntaAtual.fruta4
 		fruta5Text = perguntaAtual.fruta5
 		fruta6Text = perguntaAtual.fruta6
+		videoText = perguntaAtual.video
 		fruta1.set_texture(load('res://imagens/'+fruta1Text+'.png'))
 		fruta2.set_texture(load('res://imagens/'+fruta2Text+'.png'))
 		fruta3.set_texture(load('res://imagens/'+fruta3Text+'.png'))
 		fruta4.set_texture(load('res://imagens/'+fruta4Text+'.png'))
 		fruta5.set_texture(load('res://imagens/'+fruta5Text+'.png'))
 		fruta6.set_texture(load('res://imagens/'+fruta6Text+'.png'))
+		video.set_stream(load('res://videos/'+videoText+'.ogv'))
+		video.play()
 		resposta = perguntaAtual.resposta
 	else:
 		#acabou = true
@@ -112,3 +117,6 @@ func _on_Fruta6_button_up():
 
 func _on_Timer_timeout():
 	set_Pergunta()
+
+func _on_VideoPlayer_finished():
+	video.play()

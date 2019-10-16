@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/abacate.png-cb161a3698230ca66c9eb437a9bb2e72.stex"
+path="res://.import/Abacate.png-ae80b655b74a0a52853cac1627d7ec6a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagens/abacate.png"
-dest_files=[ "res://.import/abacate.png-cb161a3698230ca66c9eb437a9bb2e72.stex" ]
+source_file="res://imagens/Abacate.png"
+dest_files=[ "res://.import/Abacate.png-ae80b655b74a0a52853cac1627d7ec6a.stex" ]
 
 [params]
 
