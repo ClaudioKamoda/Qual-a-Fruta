@@ -1,5 +1,6 @@
 extends Control
 
+export (NodePath) var placarPath
 export (NodePath) var videoFrutaPath
 export (NodePath) var fruta1Path 
 export (NodePath) var fruta2Path
@@ -8,6 +9,7 @@ export (NodePath) var fruta4Path
 export (NodePath) var perguntasMediasPath
 export (NodePath) var timerPath
 
+onready var placar = get_node(placarPath)
 onready var video = get_node(videoFrutaPath)
 onready var fruta1 = get_node(fruta1Path)
 onready var fruta2 = get_node(fruta2Path)
@@ -62,10 +64,12 @@ func _on_Fruta1_button_up():
 		print("Você acertou, "+fruta1Text)
 		score = score + 100 - penalty
 		penalty = 0
+		placar.set_text(" Pontuação : "+str(score))
 		timer.start()
 	else:
 		penalty += 10
 		print("Você errou, "+fruta1Text)
+		placar.set_text(" Pontuação : "+str(score))
 		
 
 
@@ -74,10 +78,12 @@ func _on_Fruta2_button_up():
 		print("Você acertou, "+fruta2Text)
 		score = score + 100 - penalty
 		penalty = 0
+		placar.set_text(" Pontuação : "+str(score))
 		timer.start()
 	else:
 		penalty += 10
 		print("Você errou, "+fruta2Text)
+		placar.set_text(" Pontuação : "+str(score))
 
 
 func _on_Fruta3_button_up():
@@ -85,10 +91,12 @@ func _on_Fruta3_button_up():
 		print("Você acertou, "+fruta3Text)
 		score = score + 100 - penalty
 		penalty = 0
+		placar.set_text(" Pontuação : "+str(score))
 		timer.start()
 	else:
 		penalty += 10
 		print("Você errou, "+fruta3Text)
+		placar.set_text(" Pontuação : "+str(score))
 
 
 func _on_Fruta4_button_up():
@@ -96,10 +104,12 @@ func _on_Fruta4_button_up():
 		print("Você acertou, "+fruta4Text)
 		score = score + 100 - penalty
 		penalty = 0
+		placar.set_text(" Pontuação : "+str(score))
 		timer.start()
 	else:
 		penalty += 10
 		print("Você errou, "+fruta4Text)
+		placar.set_text(" Pontuação : "+str(score))
 
 
 func _on_Timer_timeout():

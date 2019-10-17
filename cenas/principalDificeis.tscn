@@ -1,10 +1,18 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scripts/principalDificeis.gd" type="Script" id=1]
 [ext_resource path="res://imagens/icon.png" type="Texture" id=2]
 [ext_resource path="res://cenas/Background.tscn" type="PackedScene" id=3]
 [ext_resource path="res://cenas/PerguntasDificeis.tscn" type="PackedScene" id=4]
 [ext_resource path="res://videos/Maracuja.ogv" type="VideoStream" id=5]
+[ext_resource path="res://fonts/JandaCurlygirlChunky.ttf" type="DynamicFontData" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 1
+font_data = ExtResource( 6 )
 
 [node name="Control" type="Control"]
 margin_right = 40.0
@@ -24,9 +32,9 @@ timerPath = NodePath("Timer")
 
 [node name="Fruta1" type="Button" parent="Botões"]
 margin_left = 530.0
-margin_top = 30.0
+margin_top = 60.0
 margin_right = 730.0
-margin_bottom = 180.0
+margin_bottom = 210.0
 
 [node name="SpriteFruta1" type="Sprite" parent="Botões/Fruta1"]
 texture = ExtResource( 2 )
@@ -34,9 +42,9 @@ centered = false
 
 [node name="Fruta2" type="Button" parent="Botões"]
 margin_left = 780.0
-margin_top = 30.0
+margin_top = 60.0
 margin_right = 980.0
-margin_bottom = 180.0
+margin_bottom = 210.0
 
 [node name="SpriteFruta2" type="Sprite" parent="Botões/Fruta2"]
 texture = ExtResource( 2 )
@@ -44,9 +52,9 @@ centered = false
 
 [node name="Fruta3" type="Button" parent="Botões"]
 margin_left = 530.0
-margin_top = 220.0
+margin_top = 250.0
 margin_right = 730.0
-margin_bottom = 370.0
+margin_bottom = 400.0
 
 [node name="SpriteFruta3" type="Sprite" parent="Botões/Fruta3"]
 texture = ExtResource( 2 )
@@ -54,9 +62,9 @@ centered = false
 
 [node name="Fruta4" type="Button" parent="Botões"]
 margin_left = 780.0
-margin_top = 220.0
+margin_top = 250.0
 margin_right = 980.0
-margin_bottom = 370.0
+margin_bottom = 400.0
 
 [node name="SpriteFruta4" type="Sprite" parent="Botões/Fruta4"]
 texture = ExtResource( 2 )
@@ -64,9 +72,9 @@ centered = false
 
 [node name="Fruta5" type="Button" parent="Botões"]
 margin_left = 530.0
-margin_top = 410.0
+margin_top = 440.0
 margin_right = 730.0
-margin_bottom = 560.0
+margin_bottom = 590.0
 
 [node name="SpriteFruta5" type="Sprite" parent="Botões/Fruta5"]
 texture = ExtResource( 2 )
@@ -74,9 +82,9 @@ centered = false
 
 [node name="Fruta6" type="Button" parent="Botões"]
 margin_left = 780.0
-margin_top = 410.0
+margin_top = 440.0
 margin_right = 980.0
-margin_bottom = 560.0
+margin_bottom = 590.0
 
 [node name="SpriteFruta6" type="Sprite" parent="Botões/Fruta6"]
 texture = ExtResource( 2 )
@@ -98,6 +106,15 @@ margin_right = 619.0
 margin_bottom = 852.0
 rect_rotation = 270.0
 stream = ExtResource( 5 )
+
+[node name="placar" type="RichTextLabel" parent="."]
+margin_left = 722.0
+margin_top = 10.0
+margin_right = 1014.0
+margin_bottom = 58.0
+custom_fonts/normal_font = SubResource( 1 )
+text = " Pontuação : 0"
+scroll_active = false
 [connection signal="button_up" from="Botões/Fruta1" to="." method="_on_Fruta1_button_up"]
 [connection signal="button_up" from="Botões/Fruta2" to="." method="_on_Fruta2_button_up"]
 [connection signal="button_up" from="Botões/Fruta3" to="." method="_on_Fruta3_button_up"]
