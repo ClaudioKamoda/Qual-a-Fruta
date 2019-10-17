@@ -10,6 +10,7 @@
 margin_right = 40.0
 margin_bottom = 40.0
 script = ExtResource( 1 )
+videoFrutaPath = NodePath("VideoPlayer")
 fruta1Path = NodePath("Botões/Fruta1/SpriteFruta1")
 fruta2Path = NodePath("Botões/Fruta2/SpriteFruta2")
 fruta3Path = NodePath("Botões/Fruta3/SpriteFruta3")
@@ -86,6 +87,7 @@ layer = -1
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
+one_shot = true
 
 [node name="PerguntasDificeis" parent="." instance=ExtResource( 4 )]
 

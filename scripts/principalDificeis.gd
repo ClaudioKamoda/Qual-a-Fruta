@@ -21,7 +21,7 @@ onready var perguntasDificeis = get_node(perguntasDificeisPath)
 onready var timer = get_node(timerPath)
 
 var score = 0
-#var acabou = false
+var acabou = false
 var fruta1Text
 var fruta2Text
 var fruta3Text
@@ -58,7 +58,7 @@ func set_Pergunta():
 		video.play()
 		resposta = perguntaAtual.resposta
 	else:
-		#acabou = true
+		acabou = true
 		print("Acabou")
 	
 	if perguntaAtual != null:
