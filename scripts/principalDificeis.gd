@@ -30,6 +30,7 @@ var fruta5Text
 var fruta6Text
 var videoText
 var resposta
+var penalty = 0
 
 func _ready():
 	randomize()
@@ -68,51 +69,63 @@ func set_Pergunta():
 func _on_Fruta1_button_up():
 	if fruta1Text == resposta:
 		print("Você acertou, "+fruta1Text)
-		score += 1
+		score = score + 100 - penalty
+		penalty = 0
 		timer.start()
 	else:
+		penalty += 10
 		print("Você errou, "+fruta1Text)
 
 func _on_Fruta2_button_up():
 	if fruta2Text == resposta:
 		print("Você acertou, "+fruta2Text)
-		score += 1
+		score = score + 100 - penalty
+		penalty = 0
 		timer.start()
 	else:
+		penalty += 10
 		print("Você errou, "+fruta2Text)
 
 func _on_Fruta3_button_up():
 	if fruta3Text == resposta:
 		print("Você acertou, "+fruta3Text)
-		score += 1
+		score = score + 100 - penalty
+		penalty = 0
 		timer.start()
 	else:
+		penalty += 10
 		print("Você errou, "+fruta3Text)
 
 
 func _on_Fruta4_button_up():
 	if fruta4Text == resposta:
 		print("Você acertou, "+fruta4Text)
-		score += 1
+		score = score + 100 - penalty
+		penalty = 0
 		timer.start()
 	else:
+		penalty += 10
 		print("Você errou, "+fruta4Text)
 
 func _on_Fruta5_button_up():
 	if fruta5Text == resposta:
 		print("Você acertou, "+fruta5Text)
-		score += 1
+		score = score + 100 - penalty
+		penalty = 0
 		timer.start()
 	else:
+		penalty += 10
 		print("Você errou, "+fruta5Text)
 
 
 func _on_Fruta6_button_up():
 	if fruta6Text == resposta:
 		print("Você acertou, "+fruta6Text)
-		score += 1
+		score = score + 100 - penalty
+		penalty = 0
 		timer.start()
 	else:
+		penalty += 10
 		print("Você errou, "+fruta6Text)
 
 func _on_Timer_timeout():
