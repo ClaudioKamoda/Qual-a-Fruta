@@ -40,8 +40,9 @@ alignment = 1
 
 [node name="Jogar" parent="Menu/CenterRow/Buttons" instance=ExtResource( 3 )]
 margin_top = 119.0
-margin_right = 410.0
-margin_bottom = 179.0
+margin_right = 250.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 250, 60 )
 focus_mode = 1
 enabled_focus_mode = 1
 scene_to_load = "res://cenas/Dificuldade.tscn"

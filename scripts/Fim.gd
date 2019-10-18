@@ -12,6 +12,6 @@ func _on_Reiniciar_pressed():
 	$FadeIn.fade_in()
 
 func _on_FadeIn_fade_finished():
-	get_tree().change_scene('res://cenas/Dificuldade.tscn')
+	get_tree().change_scene('res://cenas/TitleScreen.tscn')
 
 
