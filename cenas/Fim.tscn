@@ -1,0 +1,70 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/Fim.gd" type="Script" id=1]
+[ext_resource path="res://imagens/logo.png" type="Texture" id=2]
+[ext_resource path="res://fonts/JandaCurlygirlChunky.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://cenas/fadeIn.tscn" type="PackedScene" id=4]
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 50
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 1
+font_data = ExtResource( 3 )
+
+[node name="Fim" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+placarPath = NodePath("Placar")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 128.0
+margin_top = 58.0
+margin_right = 896.0
+margin_bottom = 542.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 300
+alignment = 1
+
+[node name="Logo" type="TextureRect" parent="CenterContainer/VBoxContainer"]
+margin_right = 768.0
+margin_bottom = 128.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 2 )
+
+[node name="Reiniciar" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 428.0
+margin_right = 768.0
+margin_bottom = 484.0
+custom_fonts/font = SubResource( 2 )
+text = "Reiniciar o Jogo"
+
+[node name="FadeIn" parent="." instance=ExtResource( 4 )]
+visible = false
+margin_left = 2.7207
+margin_top = 2.72076
+margin_right = 2.7207
+margin_bottom = 2.72076
+
+[node name="Placar" type="RichTextLabel" parent="."]
+margin_left = 128.0
+margin_top = 260.0
+margin_right = 895.424
+margin_bottom = 344.875
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/normal_font = SubResource( 3 )
+text = "Pontuação: 10"
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Reiniciar" to="." method="_on_Reiniciar_pressed"]
+[connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
