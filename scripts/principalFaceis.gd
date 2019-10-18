@@ -1,5 +1,7 @@
 extends Control
 
+export (NodePath) var botaoFruta1Path
+export (NodePath) var botaoFruta2Path
 export (NodePath) var placarPath
 export (NodePath) var videoFrutaPath
 export (NodePath) var fruta1Path 
@@ -7,6 +9,8 @@ export (NodePath) var fruta2Path
 export (NodePath) var perguntasFaceisPath
 export (NodePath) var timerPath
 
+onready var botao1 = get_node(botaoFruta1Path)
+onready var botao2 = get_node(botaoFruta2Path)
 onready var placar = get_node(placarPath)
 onready var video = get_node(videoFrutaPath)
 onready var fruta1 = get_node(fruta1Path)
@@ -56,6 +60,7 @@ func _on_Fruta_1_button_up():
 		placar.set_text(" Pontuação : "+str(score))
 		timer.start()
 	else:
+		botao1.set_button_icon(load("res://imagens/frutaErrada.png"))
 		penalty += 10
 		print("Você errou, "+fruta1Text+" "+str(score))
 		placar.set_text(" Pontuação : "+str(score))
@@ -69,6 +74,7 @@ func _on_Fruta_2_button_up():
 		placar.set_text(" Pontuação : "+str(score))
 		timer.start()
 	else:
+		botao2.set_button_icon(load("res://imagens/fundoErro.png"))
 		penalty += 10
 		print("Você errou, "+fruta2Text+" "+str(score))
 		placar.set_text(" Pontuação : "+str(score))
