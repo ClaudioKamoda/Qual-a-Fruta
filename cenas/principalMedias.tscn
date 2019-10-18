@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scripts/principalMedias.gd" type="Script" id=1]
 [ext_resource path="res://imagens/icon.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://cenas/PerguntasMedias.tscn" type="PackedScene" id=4]
 [ext_resource path="res://videos/Abacaxi.ogv" type="VideoStream" id=5]
 [ext_resource path="res://fonts/JandaCurlygirlChunky.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://imagens/logo.png" type="Texture" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 45
@@ -94,6 +95,13 @@ margin_bottom = 80.0
 custom_fonts/normal_font = SubResource( 1 )
 text = " Pontuação : 0"
 scroll_active = false
+
+[node name="Logo" type="TextureRect" parent="."]
+margin_left = -40.0
+margin_right = 728.0
+margin_bottom = 128.0
+rect_scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 7 )
 [connection signal="button_up" from="Botões/Fruta1" to="." method="_on_Fruta1_button_up"]
 [connection signal="button_up" from="Botões/Fruta2" to="." method="_on_Fruta2_button_up"]
 [connection signal="button_up" from="Botões/Fruta3" to="." method="_on_Fruta3_button_up"]

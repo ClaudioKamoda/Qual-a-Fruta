@@ -46,6 +46,8 @@ func set_Pergunta():
 		resposta = perguntaAtual.resposta
 	else:
 		acabou = true
+		global.score = score
+		get_tree().change_scene('res://cenas/Fim.tscn')
 		print("Acabou")
 	
 	if perguntaAtual != null:
