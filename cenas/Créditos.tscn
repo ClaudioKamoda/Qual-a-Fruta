@@ -35,6 +35,8 @@ alignment = 1
 margin_right = 626.0
 margin_bottom = 80.0
 custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color_shadow = Color( 1, 0.592157, 0, 1 )
+custom_constants/shadow_offset_y = 5
 text = "Créditos"
 
 [node name="Label2" type="Label" parent="CenterContainer/VBoxContainer"]
@@ -42,6 +44,9 @@ margin_top = 84.0
 margin_right = 626.0
 margin_bottom = 411.0
 custom_fonts/font = SubResource( 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
 text = "Desenvolvedores: 
 Claudio Jorge Lopes Filho
 Vinícius Victor Girotto
