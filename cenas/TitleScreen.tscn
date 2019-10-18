@@ -4,7 +4,7 @@
 [ext_resource path="res://imagens/logo.png" type="Texture" id=2]
 [ext_resource path="res://cenas/Buttons/Jogar.tscn" type="PackedScene" id=3]
 [ext_resource path="res://cenas/Buttons/Créditos.tscn" type="PackedScene" id=4]
-[ext_resource path="res://imagens/frutas.png" type="Texture" id=5]
+[ext_resource path="res://imagens/characters.png" type="Texture" id=5]
 [ext_resource path="res://cenas/fadeIn.tscn" type="PackedScene" id=6]
 
 [node name="TitleScreen" type="Control"]
@@ -60,10 +60,10 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Characters" type="TextureRect" parent="Menu/CenterRow/CenterContainer"]
-margin_left = 5.0
-margin_top = 74.0
-margin_right = 405.0
-margin_bottom = 324.0
+margin_left = 45.0
+margin_top = 39.0
+margin_right = 365.0
+margin_bottom = 359.0
 texture = ExtResource( 5 )
 
 [node name="FadeIn" parent="." instance=ExtResource( 6 )]
