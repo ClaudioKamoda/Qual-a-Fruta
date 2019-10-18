@@ -32,24 +32,24 @@ size_flags_vertical = 3
 
 [node name="Buttons" type="VBoxContainer" parent="Menu/CenterRow"]
 margin_right = 410.0
-margin_bottom = 399.0
+margin_bottom = 340.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/separation = 40
 alignment = 1
 
 [node name="Jogar" parent="Menu/CenterRow/Buttons" instance=ExtResource( 3 )]
-margin_top = 119.0
+margin_top = 90.0
 margin_right = 410.0
-margin_bottom = 179.0
+margin_bottom = 150.0
 focus_mode = 1
 enabled_focus_mode = 1
 scene_to_load = "res://cenas/Dificuldade.tscn"
 
 [node name="Créditos" parent="Menu/CenterRow/Buttons" instance=ExtResource( 4 )]
-margin_top = 219.0
+margin_top = 190.0
 margin_right = 410.0
-margin_bottom = 279.0
+margin_bottom = 250.0
 scene_to_load = "res://cenas/Créditos.tscn"
 
 [node name="CenterContainer" type="CenterContainer" parent="Menu/CenterRow"]

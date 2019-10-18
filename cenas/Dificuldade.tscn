@@ -38,29 +38,29 @@ alignment = 1
 
 [node name="Buttons" type="VBoxContainer" parent="Menu/CenterRow"]
 margin_right = 410.0
-margin_bottom = 399.0
+margin_bottom = 340.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/separation = 20
 alignment = 1
 
 [node name="Fácil" parent="Menu/CenterRow/Buttons" instance=ExtResource( 3 )]
-margin_top = 89.0
+margin_top = 60.0
 margin_right = 410.0
-margin_bottom = 149.0
+margin_bottom = 120.0
 script = ExtResource( 4 )
 scene_to_load = "res://cenas/principalFaceis.tscn"
 
 [node name="Médio" parent="Menu/CenterRow/Buttons" instance=ExtResource( 5 )]
-margin_top = 169.0
+margin_top = 140.0
 margin_right = 410.0
-margin_bottom = 229.0
+margin_bottom = 200.0
 scene_to_load = "res://cenas/principalMedias.tscn"
 
 [node name="Difícil" parent="Menu/CenterRow/Buttons" instance=ExtResource( 6 )]
-margin_top = 249.0
+margin_top = 220.0
 margin_right = 410.0
-margin_bottom = 309.0
+margin_bottom = 280.0
 scene_to_load = "res://cenas/principalDificeis.tscn"
 
 [node name="CenterContainer" type="CenterContainer" parent="Menu/CenterRow"]
